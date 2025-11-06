@@ -1,97 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html> 
 
-<meta charset="UTF-8" />
-<meta name="description" content="Welcome to my homepage for my project.Learn more about me and my work" />
-<meta name="keywords" content="HTML", CSS, student project, web design" />
-<meta name="author" content="MarLar6882" />
+<html lang="en"> 
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head> 
 
-</head>
+<script type='text/javascript' src='https://verchew.github.io/MarLar6882SDC260/'></script> 
+<meta charset="utf-8"> 
+<title>my homepage</title> 
+<link rel="stylesheet" href="styles.css"> 
 
-<body>
+</head> 
 
-<header>
+<body> 
 
-<title>My Project</title>
+<header> 
+<h1>Welcome to My Homepage!</h1> 
+</header> 
 
-<link rel="stylesheet" href="style.css" />
+<nav> 
+<ul class="nav-flex"> <li><a href="#about">About</a></li> 
+<li><a href="#projects">Projects</a></li> 
+<li><a href="#contact">Contact</a></li> 
+</ul> 
+</nav> 
 
-</head>
+<main class="main-flex"> <section id="about"> 
+<h2>About Me</h2> 
+<p>Hi, I'm a student learning HTML and CSS. I love building cool things on the web!</p> 
+</section> 
 
-<body>
+<section id="projects"> 
+<h2>My Projects</h2> 
+<table> 
+<caption>Sample Projects</caption> 
+<colgroup> 
+<col style="background-color: #F0F8FF;"> 
+<col> 
+<col style="background-color: #F0F8FF;"> 
+</colgroup> 
+<thead> 
+<tr> 
+<th>Project Name</th> 
+<th>Description</th> 
+<th>Image</th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td>Portfolio Website</td> 
+<td>A personal website to showcase my work and skills.</td> 
+<td><img src="https://via.placeholder.com/100" alt="Portfolio Preview"></td> 
+</tr> 
+<tr> 
+<td>Game Tracker</td> 
+<td>A web app to track games I've played and want to play.</td> 
+<td><img src="https://via.placeholder.com/100" alt="Game Tracker Preview"></td> 
+</tr> 
+</tbody> 
+<tfoot> 
+<tr> 
+<td colspan="3">More projects coming soon!</td> 
+</tr> 
+</tfoot> 
+</table> 
+</section> 
 
-<header>
-<h1>Welcome to My Homepage!</h1>
-</header>
+<section id="contact"> 
+<h2>Contact</h2> 
+<form class="form-flex"> <label for="name">Name:</label> 
+<input type="text" id="name" name="name" required> <label for="email">Email:</label> 
+<input type="email" id="email" name="email" required> <label for="subject">Subject:</label> 
+<input type="text" id="subject" name="subject"> <label for="message">Message:</label> 
+<textarea id="message" name="message" rows="5"></textarea> <input type="submit" value="Send Message"> </form> 
+</section> 
 
-<nav>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+</main> 
 
-<!--Main Content -->
-<main>
-<section id="about" class="content-box">
-<h2>About Me</h2>
-<p>Hello! My name is Mary. I am learning how to design and build websites using HTML and CSS. This homepage is part of my project!</p>
-</section>
+<footer> 
+<p>&copy; 2025 My Homepage &mdash; marlar6882</p> 
+</footer> 
 
-<section id ="projects" class="content-box">
-<h2>Projects</h2>
-<p>In this section you will find some recent web design work that I have done. Each one helped me learn and get better at HTML and CSS.</p>
+</body> 
 
-<table>
-<caption>Student Project Showcase</caption>
-
-<colgroup>
-<col style="background-color: #FFFFFF;" />
-<col />
-<col style="background-color: #F0F8FF;" />
-</colgroup>
-
-<thead>
-<tr>
-<th>Project Name</th>
-<th>Description</th>
-<th>Status</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Weather App</td>
-<td>Uses real-time API data to show local weather.</td>
-<td>Complete</td>
-</tr>
-<tr>
-<td>Student Portfolio</td>
-<td>Interactive website with projects and bio.</td>
-<td>In Progress</td>
-</tr>
-</tbody>
-
-<tfoot>
-<tr>
-<td colspan="3">More student projects coming soon!</td>
-</tr>
-</tfoot>
-</table>
-
-
-
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>Contact me if you would like to connect and talk about my work.</p>
-</section>
-
-<footer>
-<p>&copy; 2025 -- Created by Mary</p>
-</footer>
+</html>
