@@ -1,0 +1,147 @@
+body {
+font-family: arial, helvetica, sans-serif;
+background: linear-gradient(to bottom right, #E3F2FD, #FFFFFF);
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+header {
+text-align: center;
+font-size: 1.8em;
+font-weight: bold;
+padding: 25px;
+background-color: #DC7814;
+color: white;
+}
+
+.nav-flex {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+background-color: #1976D2;
+}
+
+.nav-flex li a {
+text-decoration: none;
+color: white;
+padding: 10px 15px;
+display: block;
+transition: background-color 0.3s ease;
+}
+
+.nav-flex li a:hover {
+background-color: #0D47A1;
+}
+
+.main-flex {
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 20px;
+}
+
+main section {
+padding: 20px;
+background-color: #FFFFFF;
+border: 1px solid #CCC;
+border-radius: 8px;
+box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+
+main section:hover {
+transform: scale(1.02);
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th, td {
+border: 1px solid #999;
+padding: 12px;
+text-align: center;
+}
+
+thead {
+background-color: #1565C0;
+color: white;
+}
+
+tfoot {
+background-color: #EEEEEE;
+}
+
+.form-flex {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+padding: 8px;
+border: 1px solid #CCC;
+border-radius: 4px;
+transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+border-color: #1565C0;
+}
+
+input[type="submit"] {
+background-color: #1565C0;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 4px;
+font-size: 1em;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+background-color: #0D47A1;
+}
+
+footer {
+font-size: 0.9em;
+text-align: center;
+padding: 15px;
+background-color: #263238;
+color: white;
+margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+.main-flex {
+flex-direction: column;
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+.main-flex {
+flex-direction: column;
+}
+}
+
+@media screen and (min-width: 1025px) {
+.main-flex {
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+main section {
+width: 45%;
+}
+}
